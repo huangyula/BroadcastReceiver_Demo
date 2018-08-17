@@ -1,0 +1,17 @@
+1.定义广播接收者
+2.广播接收器注册
+  A.动态注册
+    最好在Activity的onResume()注册、onPause()注销
+  B.静态注册
+
+3.广播的发送
+  定义广播的本质：定义广播所具备的“意图（Intent）”
+
+
+4.广播的类型：
+本地广播：本地广播只能被动态注册，不能静态注册。动态注册或方法时需要用到LocalBroadcastManager
+普通广播（Normal Broadcast）
+系统广播（System Broadcast）
+有序广播（Ordered Broadcast）
+粘性广播（Sticky Broadcast）Android5.0 & API 21中已经失效
+App应用内广播（Local Broadcast）只能动态注册,不能静态注册
